@@ -1,0 +1,16 @@
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.exe
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.deps.json
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.runtimeconfig.json
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.dll
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net8.0-windows\LibraryManagementSystem.pdb
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.Form1.resources
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.GenerateResource.cache
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.AssemblyInfoInputs.cache
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.AssemblyInfo.cs
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.csproj.CoreCompileInputs.cache
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.dll
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\refint\LibraryManagementSystem.dll
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.pdb
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\LibraryManagementSystem.genruntimeconfig.cache
+D:\University Academic\3rd Year\1st sem\Vissual Programming\Project\Library\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net8.0-windows\ref\LibraryManagementSystem.dll
