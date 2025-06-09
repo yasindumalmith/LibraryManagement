@@ -15,24 +15,53 @@ namespace LibraryManagementSystem
         public Form2()
         {
             InitializeComponent();
-            hideAllPanel();
+            panel1.Visible = false;
+
+        }
+
+        private void LoadFormInPanel(Form childForm)
+        {
+            panel1.Visible=true;
+            panel1.Controls.Clear();
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panel1.Controls.Add(childForm);
+            childForm.Show();
         }
 
         private void btnMngBook_Click(object sender, EventArgs e)
         {
-            hideAllPanel();
-            panelBook.Visible = true;
+            LoadFormInPanel(new manageStudent());
         }
 
         private void btnMngStu_Click(object sender, EventArgs e)
         {
-            hideAllPanel();
-            panelStudent.Visible = true;
+            LoadFormInPanel(new manageBook());
         }
-        public void hideAllPanel()
+
+        private void btnIssBook_Click(object sender, EventArgs e)
         {
-            panelBook.Visible = false;
-            panelStudent.Visible = false;
+            LoadFormInPanel(new issueBook());
+        }
+
+        private void BtnRtnBook_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new returnBook());
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            LoadFormInPanel(new report());
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formLogin fm=new formLogin();
+            
+            fm.ShowDialog();
+            
         }
     }
 }
