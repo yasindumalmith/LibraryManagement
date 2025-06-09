@@ -15,11 +15,24 @@ namespace LibraryManagementSystem
         public Form2()
         {
             InitializeComponent();
+            hideAllPanel();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void btnMngBook_Click(object sender, EventArgs e)
         {
+            hideAllPanel();
+            panelBook.Visible = true;
+        }
 
+        private void btnMngStu_Click(object sender, EventArgs e)
+        {
+            hideAllPanel();
+            panelStudent.Visible = true;
+        }
+        public void hideAllPanel()
+        {
+            panelBook.Visible = false;
+            panelStudent.Visible = false;
         }
     }
 }
