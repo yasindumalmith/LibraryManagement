@@ -14,7 +14,7 @@ namespace LibraryManagementSystem
         {
             string userName = txtName.Text;
             string userPW = txtPw.Text;
-            user us = new user(userName,userPW);
+            user us = new user(userName, userPW);
             string role = us.checkUser();
             if (role == "admin")
             {
@@ -48,6 +48,12 @@ namespace LibraryManagementSystem
                     return "invalid";
                 }
             }
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            register reg=new register();
+            reg.ShowDialog();
         }
     }
 }

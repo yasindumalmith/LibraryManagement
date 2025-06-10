@@ -32,10 +32,9 @@
             btnExit = new Button();
             label1 = new Label();
             label2 = new Label();
-            radioAdmin = new RadioButton();
             txtName = new TextBox();
             txtPw = new TextBox();
-            radioUser = new RadioButton();
+            btnRegister = new Button();
             SuspendLayout();
             // 
             // btnLogin
@@ -79,17 +78,6 @@
             label2.TabIndex = 3;
             label2.Text = "Password";
             // 
-            // radioAdmin
-            // 
-            radioAdmin.AutoSize = true;
-            radioAdmin.Location = new Point(457, 59);
-            radioAdmin.Name = "radioAdmin";
-            radioAdmin.Size = new Size(78, 24);
-            radioAdmin.TabIndex = 4;
-            radioAdmin.TabStop = true;
-            radioAdmin.Text = "Admin ";
-            radioAdmin.UseVisualStyleBackColor = true;
-            // 
             // txtName
             // 
             txtName.Location = new Point(196, 63);
@@ -105,16 +93,16 @@
             txtPw.TabIndex = 6;
             txtPw.UseSystemPasswordChar = true;
             // 
-            // radioUser
+            // btnRegister
             // 
-            radioUser.AutoSize = true;
-            radioUser.Location = new Point(457, 89);
-            radioUser.Name = "radioUser";
-            radioUser.Size = new Size(63, 24);
-            radioUser.TabIndex = 7;
-            radioUser.TabStop = true;
-            radioUser.Text = "User ";
-            radioUser.UseVisualStyleBackColor = true;
+            btnRegister.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegister.Location = new Point(440, 88);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(94, 29);
+            btnRegister.TabIndex = 7;
+            btnRegister.Text = "Register";
+            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
             // formLogin
             // 
@@ -122,10 +110,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCyan;
             ClientSize = new Size(626, 246);
-            Controls.Add(radioUser);
+            Controls.Add(btnRegister);
             Controls.Add(txtPw);
             Controls.Add(txtName);
-            Controls.Add(radioAdmin);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnExit);
@@ -142,9 +129,8 @@
         private Button btnExit;
         private Label label1;
         private Label label2;
-        private RadioButton radioAdmin;
         private TextBox txtName;
         private TextBox txtPw;
-        private RadioButton radioUser;
+        private Button btnRegister;
     }
 }
