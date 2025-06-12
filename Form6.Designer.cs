@@ -49,6 +49,7 @@
             comIssued.Name = "comIssued";
             comIssued.Size = new Size(151, 28);
             comIssued.TabIndex = 1;
+            comIssued.SelectedIndexChanged += comIssued_SelectedIndexChanged;
             // 
             // button1
             // 
@@ -58,6 +59,7 @@
             button1.TabIndex = 2;
             button1.Text = "Return Book";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // returnBook
             // 

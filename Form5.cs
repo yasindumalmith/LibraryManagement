@@ -37,21 +37,21 @@ namespace LibraryManagementSystem
             reader1.Close();
 
             
-            using SqlCommand cmd2 = new SqlCommand("SELECT Title FROM BOOK", conn);
+            using SqlCommand cmd2 = new SqlCommand("SELECT Bookid FROM BOOK", conn);
             using SqlDataReader reader2 = cmd2.ExecuteReader();
             while (reader2.Read())
             {
-                comIssBook.Items.Add(reader2["Title"].ToString());
+                comIssBook.Items.Add(reader2["Bookid"].ToString());
             }
         }
 
         private void btnIssueBook_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO issueBook (StudentId,Book) " +
-                       "VALUES (@stuId,@book)";
+            string sql = "INSERT INTO issueBook (StudentId,BookId) " +
+                       "VALUES (@stuId,@BookId)";
             using SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand(sql, connection);
-            cmd.Parameters.AddWithValue("@book", comIssBook.Text);
+            cmd.Parameters.AddWithValue("@BookId", comIssBook.Text);
             cmd.Parameters.AddWithValue("@stuId", comIssStu.Text);
             connection.Open();
             cmd.ExecuteNonQuery();
