@@ -115,6 +115,7 @@
             btnBookAdd.TabIndex = 8;
             btnBookAdd.Text = "Add";
             btnBookAdd.UseVisualStyleBackColor = true;
+            btnBookAdd.Click += btnBookAdd_Click;
             // 
             // btnBookDelete
             // 

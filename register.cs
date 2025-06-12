@@ -61,27 +61,41 @@ namespace LibraryManagementSystem
 
             public void uploadToDatabase()
             {
+                try
+                {
 
-                string sql = "INSERT INTO userInfo (StudentId,StudentName, Year, Age, Gender, Username, Password) " +
-                       "VALUES (@id,@name, @year, @age, @gender, @username, @password)";
-                using SqlConnection connection = new SqlConnection(connectionString);
-                SqlCommand cmd = new SqlCommand(sql, connection);
-                string stuId = generateStuId();
-                cmd.Parameters.AddWithValue("@id", stuId);
-                cmd.Parameters.AddWithValue("@name", stuName);
-                cmd.Parameters.AddWithValue("@year", year);
-                cmd.Parameters.AddWithValue("@age", age);
-                cmd.Parameters.AddWithValue("@gender", gender);
-                cmd.Parameters.AddWithValue("@username", userName);
-                cmd.Parameters.AddWithValue("@password", password);
-                connection.Open();
-                cmd.ExecuteNonQuery();
+                    string sql = "INSERT INTO userInfo (StudentId,StudentName, Year, Age, Gender, Username, Password) " +
+                           "VALUES (@id,@name, @year, @age, @gender, @username, @password)";
+                    using SqlConnection connection = new SqlConnection(connectionString);
+                    SqlCommand cmd = new SqlCommand(sql, connection);
+                    string stuId = generateStuId();
+                    cmd.Parameters.AddWithValue("@id", stuId);
+                    cmd.Parameters.AddWithValue("@name", stuName);
+                    cmd.Parameters.AddWithValue("@year", year);
+                    cmd.Parameters.AddWithValue("@age", age);
+                    cmd.Parameters.AddWithValue("@gender", gender);
+                    cmd.Parameters.AddWithValue("@username", userName);
+                    cmd.Parameters.AddWithValue("@password", password);
+                    connection.Open();
+                    cmd.ExecuteNonQuery();
+                }
+                
+                catch (SqlException ex)
+                {
+                    MessageBox.Show("Database error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
 
             }
             public string generateStuId()
             {
-                using SqlConnection connection = new SqlConnection(connectionString) ;
-                
+                try
+                {
+                    using SqlConnection connection = new SqlConnection(connectionString);
+
                     string query = "SELECT TOP 1 StudentId FROM userInfo ORDER BY StudentId DESC";
                     SqlCommand cmd = new SqlCommand(query, connection);
                     connection.Open();
@@ -91,12 +105,18 @@ namespace LibraryManagementSystem
                     string newId = "S001";
                     if (lastId != null)
                     {
-                        int num = int.Parse(lastId.ToString().Substring(1)); 
-                        newId = "S" + (num + 1).ToString("D3"); 
+                        int num = int.Parse(lastId.ToString().Substring(1));
+                        newId = "S" + (num + 1).ToString("D3");
                     }
                     return newId;
-                
+                }
+                catch(Exception ex)
+    {
+                    MessageBox.Show("Failed to generate student ID: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return "S001"; 
+                }
             }
+
 
 
         }

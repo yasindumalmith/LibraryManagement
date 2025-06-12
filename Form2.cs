@@ -32,12 +32,12 @@ namespace LibraryManagementSystem
 
         private void btnMngBook_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new manageStudent());
+            LoadFormInPanel(new manageBook());
         }
 
         private void btnMngStu_Click(object sender, EventArgs e)
         {
-            LoadFormInPanel(new manageBook());
+            LoadFormInPanel(new manageStudent());
         }
 
         private void btnIssBook_Click(object sender, EventArgs e)

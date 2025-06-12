@@ -43,6 +43,7 @@
             btnIssueBook.TabIndex = 0;
             btnIssueBook.Text = "Issue Book";
             btnIssueBook.UseVisualStyleBackColor = true;
+            btnIssueBook.Click += btnIssueBook_Click;
             // 
             // label1
             // 
