@@ -37,7 +37,7 @@
             // 
             // btnIssueBook
             // 
-            btnIssueBook.Location = new Point(371, 315);
+            btnIssueBook.Location = new Point(188, 207);
             btnIssueBook.Name = "btnIssueBook";
             btnIssueBook.Size = new Size(104, 29);
             btnIssueBook.TabIndex = 0;
@@ -47,7 +47,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(273, 153);
+            label1.Location = new Point(120, 71);
             label1.Name = "label1";
             label1.Size = new Size(60, 20);
             label1.TabIndex = 1;
@@ -56,7 +56,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(273, 242);
+            label2.Location = new Point(120, 146);
             label2.Name = "label2";
             label2.Size = new Size(43, 20);
             label2.TabIndex = 2;
@@ -65,7 +65,7 @@
             // comIssStu
             // 
             comIssStu.FormattingEnabled = true;
-            comIssStu.Location = new Point(444, 153);
+            comIssStu.Location = new Point(286, 68);
             comIssStu.Name = "comIssStu";
             comIssStu.Size = new Size(151, 28);
             comIssStu.TabIndex = 3;
@@ -73,7 +73,7 @@
             // comIssBook
             // 
             comIssBook.FormattingEnabled = true;
-            comIssBook.Location = new Point(444, 234);
+            comIssBook.Location = new Point(286, 143);
             comIssBook.Name = "comIssBook";
             comIssBook.Size = new Size(151, 28);
             comIssBook.TabIndex = 4;
@@ -83,7 +83,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightBlue;
-            ClientSize = new Size(845, 450);
+            ClientSize = new Size(619, 342);
             Controls.Add(comIssBook);
             Controls.Add(comIssStu);
             Controls.Add(label2);
