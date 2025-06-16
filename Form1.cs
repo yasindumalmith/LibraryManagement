@@ -19,7 +19,7 @@ namespace LibraryManagementSystem
             user us = new user(userName, userPW);
             string role = us.checkUser();
             bool checkUserNamePw = us.ValidateUser(userName, userPW);
-            if (role == "admin")
+            if (role == "admi")
             {
                 this.Hide();
                 Form2 dashboard = new Form2();
